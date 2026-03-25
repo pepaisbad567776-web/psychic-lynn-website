@@ -104,6 +104,16 @@ img {
     font-weight: 700;
     color: var(--color-primary) !important;
     letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .nav-menu {
@@ -255,6 +265,25 @@ img {
     position: relative;
     z-index: 2;
     padding: 120px 0 80px;
+}
+
+.hero-image {
+    margin-bottom: 32px;
+}
+
+.hero-image img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: var(--radius-md);
+    filter: drop-shadow(0 0 30px rgba(201, 168, 76, 0.3));
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .hero-subtitle {
